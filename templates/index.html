@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+   
+
+<div class="container">
+
+    <div class="top-bar">
+
+        <select id="targetLanguage">
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="malayalam">Malayalam</option>
+            <option value="tamil">Tamil</option>
+            <option value="french">French</option>
+            <option value="arabic">Arabic</option>
+            <option value="korean">Korean</option>
+            <option value="bengali">Bengali</option>
+            <option value="urdu">Urdu</option>
+            <option value="russian">Russian</option>
+
+
+        </select>
+
+    </div>
+
+    <div class="translation-box">
+
+        <textarea
+            id="inputText"
+            placeholder="Enter text"
+        ></textarea>
+
+        <textarea
+            id="outputText"
+            placeholder="Translation"
+            readonly
+        ></textarea>
+
+    </div>
+
+    <button onclick="translateText()">
+        Translate
+    </button>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
